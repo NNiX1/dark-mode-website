@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Information</h1>
+        <nav>
+            <a href="index.html" class="back-button">Back to Home</a>
+        </nav>
+        
+        <div class="content">
+            <div id="weather-display">
+                <p>Loading weather information...</p>
+            </div>
+            <div class="weather-actions">
+                <button onclick="fetchWeatherForTrnava()">Refresh Weather</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+    <script>
+        // Automatically fetch weather when page loads
+        document.addEventListener('DOMContentLoaded', fetchWeatherForTrnava);
+    </script>
+</body>
+</html>

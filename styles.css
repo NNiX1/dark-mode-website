@@ -61,6 +61,28 @@ nav {
     margin-top: 20px;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4a9eff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.feature-button:hover {
+    background-color: #357abd;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -87,4 +109,34 @@ button {
 
 button:hover {
     background-color: #357abd;
+}
+
+.weather-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-details {
+    text-align: center;
+}
+
+.weather-error {
+    color: #ff6b6b;
+    text-align: center;
+}
+
+.weather-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
